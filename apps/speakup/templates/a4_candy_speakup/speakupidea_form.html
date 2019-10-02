@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load widget_tweaks i18n thumbnail %}
+
+{% block content %}
+<div class="container">
+    <div class="offset-md-1 col-md-10 mb-5">
+        <div class="card">
+            <div class="card-header">
+                {% if mode == 'create' %}
+                {% trans 'create new proposal for this project'%}:
+                {% elif mode == 'update' %}
+                {% trans 'update speakup'%}
+                {% endif %}
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">{{ project.name }}</h5>
+                <p class="card-text">{{ project.description | truncatechars:185 }}</p>
+                <a href="{% url 'speakup-detail' slug=project.slug %}"><i class="fa fa-arrow-left" aria-hidden="true"></i> {% trans 'back to project' %}</a>
+            </div>
+        </div>
+        <div>
+            <form enctype="multipart/form-data" action="{{ request.path }}" method="post">
+                {% csrf_token %}
+                {% for hidden_field in form.hidden_fields %}
+                {{ hidden_field }}
+                {% endfor %}
+
+                {% include 'a4_candy_contrib/form_fields.html' with fields=form.visible_fields %}
+
+                <div class="row">
+                    <div class="col-6 col-sm-2">
+                        <button type="submit" class="btn btn-primary btn-block">{% trans 'post'%}</button>
+                    </div>
+                    <div class="col-6 col-sm-2">
+                        <a href="{% if mode == 'create' %}{% url 'speakup-detail' slug=project.slug %}{% else %}{% url 'speakup-detail' speakupidea.slug %}{% endif %}" class="btn btn-link btn-block">{% trans 'cancel'%}</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        {% endblock %}
+
+        {% block extra_js %}
+            {{ block.super }}
+            {{ form.media.js }}
+        {% endblock %}
+        {% block extra_css %}
+            {{ form.media.css }}
+        {% endblock %}
+    </div>
+</div>

@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% load i18n static rules wagtailcore_tags ckeditor_tags thumbnail react_questions a4dashboard_tags %}
+
+{% block extra_messages %}
+    {{ block.super }}
+
+    {% if view.project.is_draft %}
+        <div class="alert alert-warning alert-top" role="alert">
+            <div class="text-center alert-text">
+                {% trans 'This event is in not published yet.' %}
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+<div class="py-3 mb-5">
+    <div class="container">
+        <div class="text-center">
+            <h1 class="u-serif-header text-center">{{ view.project.name }}</h1>
+            {% if project.description %}
+            <p>{{ view.project.description }}</p>
+            {% endif %}
+            {% has_perm 'a4projects.change_project' request.user project as can_change_project %}
+            {% if can_change_project %}
+            <p>
+            {% if not project.is_public %}
+                <span class="badge badge-secondary">{% trans 'private' %}</span>
+            {% endif %}
+            {% if project.is_archived %}
+                <span class="badge badge-info">{% trans 'archived' %}</span>
+            {% elif project.has_finished %}
+                <span class="badge badge-dark">{% trans 'finished' %}</span>
+            {% elif days %}
+                <span class="badge badge-warning">{{ days }}</span>
+            {% endif %}
+            </p>
+            <div class="row">
+                <div class="col text-center">
+                    <a href="{% url 'a4dashboard:project-edit' project_slug=project.slug organisation_slug=project.organisation.slug %}" class="btn btn--light btn-round" data-embed-target="external"> <i class="fa fa-edit" aria-hidden="true"></i>{% trans 'Edit' %}</a>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<div class="row mb-4">
+    <div class="col-md-12">
+    <ul class="nav nav-tabs nav-tabs--center" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link px-lg-5" id="info-tab" data-toggle="tab" href="#info" role="tab" aria-controls="information" aria-selected="true">{% trans "Information" %}</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link px-lg-5 active" id="participation-tab" data-toggle="tab" href="#participation" role="tab" aria-controls="participation" aria-selected="false">{% trans "Questions" %}</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link px-lg-5" id="statistics-tab" data-toggle="tab" href="#statistics" role="tab" aria-controls="statistics" aria-selected="false">{% trans "Statistics" %}</a>
+        </li>
+    </ul>
+  </div>
+</div>
+<div class="tab-content mb-4" id="myTabContent">
+    <div class="tab-pane fade" id="info" role="tabpanel" aria-labelledby="info-tab">
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-1 col-md-10">
+                    <div>
+                        <p>{{ view.project.information|transform_collapsibles|richtext }}</p>
+                        {% if view.project.contact_name or view.project.contact_address_text or view.project.contact_email or view.project.contact_phone or view.project.contact_url %}
+                        <h5>{% trans 'Contact for questions' %}</h5>
+                          {% if view.project.contact_name %}
+                          <p>{{ view.project.contact_name }}</p>
+                          {% endif %}
+                          {% if view.project.contact_address_text %}
+                          <p>{{ view.project.contact_address_text|linebreaks }}</p>
+                          {% endif %}
+                          {% if view.project.contact_phone %}
+                          <p><strong>{% trans 'Telephone' %}: </strong>{{ view.project.contact_phone }}</p>
+                          {% endif %}
+                          {% if view.project.contact_email %}
+                          <a class="btn btn-primary" href="mailto:{{ view.project.contact_email }}">
+                           {% trans 'Email' %}
+                          </a>
+                          {% endif %}
+                          {% if view.project.contact_url %}
+                          <a class="btn btn-primary" target="_blank" href="{{ view.project.contact_url }}">
+                           {% trans 'Website' %}
+                          </a>
+                          {% endif %}
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade show active" id="participation" role="tabpanel" aria-labelledby="participation-tab">
+        {% if view.project.has_started %}
+        {% block phase_content %}{% endblock %}
+        {% else %}
+        <p class="text-center mt-5">
+        {% trans 'The event has not started yet.' %}
+        </p>
+        {% endif %}
+    </div>
+    <div class="tab-pane fade" id="statistics" role="tabpanel" aria-labelledby="statistics-tab">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="u-serif-header text-center">{% trans "Statistics" %}</h3>
+                    <p class="text-center text-muted">{% trans "The answered questions are included in the statistics. It shows which groups are represented." %}</p>
+                    <div>
+                    {% if view.project.has_started %}
+                    {% react_questions_statistics view.module %}
+                    {% else %}
+                    <p class="text-center mt-5">
+                    {% trans 'The event has not started yet.' %}
+                    </p>
+                    {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

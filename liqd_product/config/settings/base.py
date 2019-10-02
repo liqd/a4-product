@@ -109,6 +109,11 @@ INSTALLED_APPS = (
     'apps.ideas',
     'apps.mapideas',
     'apps.polls',
+
+    # speakup
+    'apps.questions',
+    'apps.likes',
+    'apps.speakup',
 )
 
 MIDDLEWARE = (

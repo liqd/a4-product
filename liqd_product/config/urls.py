@@ -29,10 +29,14 @@ from apps.contrib.sitemaps.product_projects_sitemap import \
     ProductProjectsSitemap
 from apps.contrib.sitemaps.static_sitemap import StaticSitemap
 from apps.documents.api import DocumentViewSet
+from apps.likes.api import LikesViewSet
+from apps.likes.routers import LikesDefaultRouter
 from apps.moderatorremark.api import ModeratorRemarkViewSet
 from apps.polls.api import PollViewSet
 from apps.polls.api import VoteViewSet
 from apps.polls.routers import QuestionDefaultRouter
+from apps.questions import urls as questions_urls
+from apps.questions.api import QuestionViewSet
 from apps.users.decorators import user_is_project_admin
 
 router = routers.DefaultRouter()
@@ -43,6 +47,7 @@ router.register(r'polls', PollViewSet, basename='polls')
 module_router = a4routers.ModuleDefaultRouter()
 # FIXME: rename to 'chapters'
 module_router.register(r'documents', DocumentViewSet, basename='chapters')
+module_router.register(r'questions', QuestionViewSet, base_name='questions')
 
 orga_router = a4routers.OrganisationDefaultRouter()
 
@@ -54,6 +59,9 @@ ct_router.register(r'moderatorremarks', ModeratorRemarkViewSet,
 
 question_router = QuestionDefaultRouter()
 question_router.register(r'vote', VoteViewSet, basename='vote')
+
+likes_router = LikesDefaultRouter()
+likes_router.register(r'likes', LikesViewSet, base_name='likes')
 
 sitemaps = {
     'organisations': ProductOrganisationsSitemap,
@@ -79,6 +87,7 @@ urlpatterns = [
     re_path(r'^api/', include(orga_router.urls)),
     re_path(r'^api/', include(question_router.urls)),
     re_path(r'^api/', include(router.urls)),
+    re_path(r'^api/', include(likes_router.urls)),
 
     re_path(r'^upload/', user_is_project_admin(ck_views.upload),
             name='ckeditor_upload'),
@@ -102,8 +111,12 @@ urlpatterns = [
              include(('apps.offlineevents.urls', 'a4_candy_offlineevents'),
                      namespace='a4_candy_offlineevents')),
         path('projects/', include('apps.projects.urls')),
+        path('speakupideas/',
+             include(('apps.speakup.urls', 'a4_candy_speakup'),
+                     namespace='a4_candy_speakup')),
         path('text/', include(('apps.documents.urls', 'a4_candy_documents'),
                               namespace='a4_candy_documents')),
+        path('questions/', include(questions_urls)),
     ])),
 
     path('sitemap.xml', wagtail_sitemap_views.index,
@@ -143,5 +156,6 @@ if settings.DEBUG:
 # generic patterns at the very end
 urlpatterns += [
     re_path(r'', include('apps.organisations.urls')),
+    re_path(r'', include('apps.speakup.urls')),
     re_path(r'', include('wagtail.core.urls')),
 ]

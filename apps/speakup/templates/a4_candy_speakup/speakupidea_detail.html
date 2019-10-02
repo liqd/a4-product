@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load i18n react_comments react_ratings thumbnail rules %}
+
+{% block content %}
+<div class="container">
+    <div >
+        <nav class="navbar">
+            <ul class="navbar-nav">
+                <li>
+                    <a href="{{ module.get_detail_url }}">
+                        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                        {% trans 'go back' %}
+                    </a>
+                </li>
+            </ul>
+            {% has_perm 'a4_candy_speakup.modify_speakup' request.user speakup as show_dropdown %}
+
+            {% if show_dropdown %}
+            <ul class="navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a id="drop" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false"> <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="drop">
+                        <li>
+                            <a href="{% url 'speakup-update' speakup.slug %}">{% trans 'Edit' %}</a>
+                        </li>
+                        <li role="separator" class="divider"></li>
+                        <li>
+                            <a href="" data-toggle="modal" data-target="#myModal">{% trans 'Delete' %}</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            {% endif %}
+        </nav>
+    </div>
+
+    {% if speakup.image %}
+    <img class="speakup-image" src="{{ speakup.image | thumbnail_url:'speakup_image'}}" style="width: 100%;">
+    {% endif %}
+
+    <div class="speakup-body">
+        <div class="speakup-title">
+            <h1 class="u-serif-header">{{ speakup.name }}</h1>
+        </div>
+
+        {% if speakup.category %}
+        <span class="badge badge-primary">{{ speakup.category }}</span>
+        {% endif %}
+
+        <div class="speakup-description">
+            <p>{{ speakup.description |safe }}</p>
+        </div>
+
+        <div class="speakup-ratings">
+            {% react_ratings speakup %}
+        </div>
+
+        {% react_comments speakup %}
+    </div>
+</div>
+{% endblock %}

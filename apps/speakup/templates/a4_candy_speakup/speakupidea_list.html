@@ -1,0 +1,56 @@
+{% extends 'a4_candy_speakup/project_detail.html' %}
+{% load i18n discovery_tags %}
+
+{% block phase_content %}
+<div class="container">
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="speakup-list">
+                {% has_or_would_have_perm 'a4_candy_speakup.propose_speakup' request.user view.module as add_button_enabled %}
+                {% if add_button_enabled %}
+                <a href="{% url 'question-create' slug=view.module.slug organisation_slug=view.module.project.organisation.slug %}" class="btn btn--primary btn--full btn--huge speakup-list-button mb-4" id="speakup-create">
+                    <i class="fa fa-plus speakup-list-button-icon" aria-hidden="true"></i>
+                    {% trans 'Add question' %}
+                </a>
+                {% endif %}
+
+                <div id="speakup-list">
+                    <div class="filter-bar d-flex justify-content-between">
+                    {% for field in view.filter.form %}
+                    {% if field.name != 'ordering' %}
+                    <div class="filter d-none d-sm-inline-block projects-filter-{{ field.name }}">
+                        {{ field }}
+                    </div>
+                    {% else %}
+                    <div class="d-none d-sm-inline-block projects-filter-{{ field.name }}">
+                        {{ field }}
+                    </div>
+                    {% endif %}
+                    <div class="col-xs-12 d-block d-sm-none projects-filter-{{ field.name }}">
+                        {{ field }}
+                    </div>
+                    {% endfor %}
+                    </div>
+
+                  {% if speakup_list.count > 0 %}
+                  {% for speakup in speakup_list %}
+                  <div class="list-group">
+                  {% include "a4_candy_speakup/includes/speakup_list_tile.html" with speakup=speakup %}
+                  </div>
+                  {% endfor %}
+
+
+                  {% if is_paginated %}
+                  {% include "a4_candy_speakup/includes/pagination.html"%}
+                  {% endif %}
+                  {% else %}
+                  <div class="infotext">
+                      {% trans 'No proposals found' %}
+                  </div>
+                  {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
