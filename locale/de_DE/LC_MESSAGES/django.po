@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: a4-meinberlin\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 15:55+0200\n"
+"POT-Creation-Date: 2019-10-23 17:19+0200\n"
 "PO-Revision-Date: 2017-10-16 13:42+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -60,11 +60,11 @@ msgstr "Benötigte Felder zur Veröffentlichung"
 #: adhocracy4/dashboard/templates/a4dashboard/base_form_project.html:18
 #: apps/activities/templates/a4_candy_activities/activities_dashboard.html:17
 #: apps/budgeting/templates/a4_candy_budgeting/includes/proposal_form.html:29
-#: apps/budgeting/templates/a4_candy_budgeting/proposal_moderate_form.html:36
-#: apps/ideas/templates/a4_candy_ideas/idea_moderate_form.html:36
+#: apps/budgeting/templates/a4_candy_budgeting/proposal_moderate_form.html:37
+#: apps/ideas/templates/a4_candy_ideas/idea_moderate_form.html:37
 #: apps/ideas/templates/a4_candy_ideas/includes/idea_form.html:23
 #: apps/mapideas/templates/a4_candy_mapideas/includes/mapidea_form.html:27
-#: apps/mapideas/templates/a4_candy_mapideas/mapidea_moderate_form.html:35
+#: apps/mapideas/templates/a4_candy_mapideas/mapidea_moderate_form.html:36
 #: apps/moderatorremark/templates/a4_candy_moderatorremark/includes/popover_remark.html:27
 #: apps/offlineevents/templates/a4_candy_offlineevents/includes/offlineevent_form.html:14
 #: liqd_product/templates/a4dashboard/base_form_module.html:19
@@ -178,15 +178,15 @@ msgstr "Projektentwurf anlegen"
 #: adhocracy4/dashboard/templates/a4dashboard/project_create_form.html:27
 #: adhocracy4/dashboard/templates/a4dashboard/project_create_form.html:27
 #: apps/budgeting/templates/a4_candy_budgeting/includes/proposal_form.html:30
-#: apps/budgeting/templates/a4_candy_budgeting/proposal_confirm_delete.html:14
-#: apps/budgeting/templates/a4_candy_budgeting/proposal_moderate_form.html:37
+#: apps/budgeting/templates/a4_candy_budgeting/proposal_confirm_delete.html:15
+#: apps/budgeting/templates/a4_candy_budgeting/proposal_moderate_form.html:38
 #: apps/embed/templates/a4_candy_embed/embed.html:46
-#: apps/ideas/templates/a4_candy_ideas/idea_confirm_delete.html:15
-#: apps/ideas/templates/a4_candy_ideas/idea_moderate_form.html:37
+#: apps/ideas/templates/a4_candy_ideas/idea_confirm_delete.html:16
+#: apps/ideas/templates/a4_candy_ideas/idea_moderate_form.html:38
 #: apps/ideas/templates/a4_candy_ideas/includes/idea_form.html:24
 #: apps/mapideas/templates/a4_candy_mapideas/includes/mapidea_form.html:28
-#: apps/mapideas/templates/a4_candy_mapideas/mapidea_confirm_delete.html:14
-#: apps/mapideas/templates/a4_candy_mapideas/mapidea_moderate_form.html:36
+#: apps/mapideas/templates/a4_candy_mapideas/mapidea_confirm_delete.html:15
+#: apps/mapideas/templates/a4_candy_mapideas/mapidea_moderate_form.html:37
 #: apps/newsletters/templates/a4_candy_newsletters/restricted_newsletter_dashboard_form.html:30
 #: apps/offlineevents/templates/a4_candy_offlineevents/includes/offlineevent_form.html:15
 #: apps/offlineevents/templates/a4_candy_offlineevents/offlineevent_confirm_delete.html:15
@@ -220,9 +220,9 @@ msgstr "privat"
 
 #: adhocracy4/dashboard/templates/a4dashboard/project_list.html:45
 #: adhocracy4/dashboard/templates/a4dashboard/project_list.html:45
-#: apps/contrib/templates/a4_candy_contrib/item_detail.html:96
+#: apps/contrib/templates/a4_candy_contrib/item_detail.html:97
 #: apps/offlineevents/templates/a4_candy_offlineevents/includes/offlineevent_list_item.html:20
-#: apps/projects/templates/a4_candy_projects/project_detail.html:51
+#: apps/projects/templates/a4_candy_projects/project_detail.html:53
 #: liqd_product/templates/a4dashboard/includes/project_list_item.html:39
 msgid "Edit"
 msgstr "Bearbeiten"
@@ -412,9 +412,8 @@ msgstr "Grundeinstellungen bearbeiten"
 
 #: adhocracy4/dashboard/dashboard.py:23
 #: apps/organisations/templates/organisation_information.html:4
-#: apps/organisations/templates/organisation_information.html:9
-#: apps/projects/templates/a4_candy_projects/project_detail.html:64
-#: apps/questions/templates/a4_candy_questions/question_module_detail.html:23
+#: apps/organisations/templates/organisation_information.html:10
+#: apps/projects/templates/a4_candy_projects/project_detail.html:66
 #: liqd_product/templates/header.html:34
 msgid "Information"
 msgstr "Information"
@@ -424,7 +423,7 @@ msgid "Edit project information"
 msgstr "Projektinformation bearbeiten"
 
 #: adhocracy4/dashboard/dashboard.py:33
-#: apps/projects/templates/a4_candy_projects/project_detail.html:84
+#: apps/projects/templates/a4_candy_projects/project_detail.html:86
 msgid "Result"
 msgstr "Ergebnis"
 
@@ -473,10 +472,10 @@ msgid "No"
 msgstr "Nein"
 
 #: adhocracy4/dashboard/filter.py:21
-#: apps/budgeting/templates/a4_candy_budgeting/proposal_confirm_delete.html:13
+#: apps/budgeting/templates/a4_candy_budgeting/proposal_confirm_delete.html:14
 #: apps/budgeting/views.py:32
-#: apps/ideas/templates/a4_candy_ideas/idea_confirm_delete.html:13
-#: apps/mapideas/templates/a4_candy_mapideas/mapidea_confirm_delete.html:13
+#: apps/ideas/templates/a4_candy_ideas/idea_confirm_delete.html:14
+#: apps/mapideas/templates/a4_candy_mapideas/mapidea_confirm_delete.html:14
 #: apps/offlineevents/templates/a4_candy_offlineevents/offlineevent_confirm_delete.html:12
 msgid "Yes"
 msgstr "Ja"
@@ -491,7 +490,7 @@ msgstr ""
 "Nur eingeladene Nutzerinnen und Nutzer können sich beteiligen (privat)."
 
 #: adhocracy4/dashboard/forms.py:79
-#: apps/projects/templates/a4_candy_projects/project_detail.html:100
+#: apps/projects/templates/a4_candy_projects/project_detail.html:103
 msgid "Contact for questions"
 msgstr "Kontakt für Rückfragen"
 
@@ -521,18 +520,18 @@ msgid "Address"
 msgstr "Adresse"
 
 #: adhocracy4/dashboard/forms.py:103
-#: apps/projects/templates/a4_candy_projects/project_detail.html:108
+#: apps/projects/templates/a4_candy_projects/project_detail.html:111
 msgid "Telephone"
 msgstr "Telefon"
 
 #: adhocracy4/dashboard/forms.py:105
 #: apps/projects/templates/a4_candy_projects/includes/removeable_invite_list.html:7
-#: apps/projects/templates/a4_candy_projects/project_detail.html:112
+#: apps/projects/templates/a4_candy_projects/project_detail.html:115
 msgid "Email"
 msgstr "E-Mail"
 
 #: adhocracy4/dashboard/forms.py:107
-#: apps/projects/templates/a4_candy_projects/project_detail.html:117
+#: apps/projects/templates/a4_candy_projects/project_detail.html:120
 msgid "Website"
 msgstr "Webseite"
 
@@ -746,32 +745,32 @@ msgstr ""
 "in maximal 512 Zeichen das Ziel des Moduls beschreiben."
 
 #: adhocracy4/modules/models.py:191
-#: adhocracy4/projects/models.py:411
+#: adhocracy4/projects/models.py:412
 msgid "day"
 msgstr "Tag"
 
 #: adhocracy4/modules/models.py:191
-#: adhocracy4/projects/models.py:411
+#: adhocracy4/projects/models.py:412
 msgid "days"
 msgstr "Tage"
 
 #: adhocracy4/modules/models.py:192
-#: adhocracy4/projects/models.py:412
+#: adhocracy4/projects/models.py:413
 msgid "hour"
 msgstr "Stunde"
 
 #: adhocracy4/modules/models.py:192
-#: adhocracy4/projects/models.py:412
+#: adhocracy4/projects/models.py:413
 msgid "hours"
 msgstr "Stunden"
 
 #: adhocracy4/modules/models.py:193
-#: adhocracy4/projects/models.py:413
+#: adhocracy4/projects/models.py:414
 msgid "minute"
 msgstr "Minute"
 
 #: adhocracy4/modules/models.py:193
-#: adhocracy4/projects/models.py:413
+#: adhocracy4/projects/models.py:414
 msgid "minutes"
 msgstr "Minuten"
 
@@ -980,17 +979,15 @@ msgstr "Projekt ist archiviert."
 
 #: adhocracy4/projects/models.py:255
 msgid ""
-"Exclude this project from all listings by default. You can still access this "
-"project by using filters."
+"Archived projects are not shown in the project overview. For project "
+"initiators they are still visible in the dashboard."
 msgstr ""
-"Dieses Projekt standardmäßig von allen Listen ausschließen. Sie können das "
-"Projekt weiterhin über die Filter erreichen."
 
-#: adhocracy4/projects/models.py:259
+#: adhocracy4/projects/models.py:260
 msgid "Project topics"
 msgstr "Projektthemen"
 
-#: adhocracy4/projects/models.py:260
+#: adhocracy4/projects/models.py:261
 msgid "Add topics to your project."
 msgstr ""
 "Bitte ordnen Sie Ihrem Projekt 1-2 Themenfelder zu. Ihr Projekt kann in der "
@@ -1016,7 +1013,7 @@ msgid "Online Participation"
 msgstr "Online-Beteiligung"
 
 #: adhocracy4/reports/templatetags/react_reports.py:30
-#: apps/contrib/templates/a4_candy_contrib/item_detail.html:107
+#: apps/contrib/templates/a4_candy_contrib/item_detail.html:108
 msgid "Report"
 msgstr "Melden"
 
@@ -1055,7 +1052,7 @@ msgid "Your profile"
 msgstr "Dein Profil"
 
 #: apps/account/templates/a4_candy_account/profile.html:22
-#: apps/organisations/templates/organisation_form.html:23
+#: apps/organisations/templates/organisation_form.html:24
 msgid "Save changes"
 msgstr "Änderungen speichern"
 
@@ -1211,7 +1208,7 @@ msgstr "Negative Bewertungen"
 msgid "Confirm Proposal Deletion"
 msgstr "Bestätigung der Vorschlagslöschung"
 
-#: apps/budgeting/templates/a4_candy_budgeting/proposal_confirm_delete.html:9
+#: apps/budgeting/templates/a4_candy_budgeting/proposal_confirm_delete.html:10
 msgid "Are you sure you want to delete the proposal?"
 msgstr "Sind Sie sicher, dass Sie diesen Vorschlag löschen möchten?"
 
@@ -1221,35 +1218,35 @@ msgstr "Sind Sie sicher, dass Sie diesen Vorschlag löschen möchten?"
 msgid "Create a new proposal"
 msgstr "Anlegen eines neuen Vorschlags"
 
-#: apps/budgeting/templates/a4_candy_budgeting/proposal_create_form.html:8
-#: apps/budgeting/templates/a4_candy_budgeting/proposal_moderate_form.html:8
-#: apps/budgeting/templates/a4_candy_budgeting/proposal_update_form.html:9
-#: apps/contrib/templates/a4_candy_contrib/item_detail.html:10
-#: apps/documents/templates/a4_candy_documents/paragraph_detail.html:9
-#: apps/ideas/templates/a4_candy_ideas/idea_create_form.html:8
-#: apps/ideas/templates/a4_candy_ideas/idea_moderate_form.html:9
-#: apps/ideas/templates/a4_candy_ideas/idea_update_form.html:9
-#: apps/mapideas/templates/a4_candy_mapideas/mapidea_create_form.html:8
-#: apps/mapideas/templates/a4_candy_mapideas/mapidea_moderate_form.html:8
-#: apps/mapideas/templates/a4_candy_mapideas/mapidea_update_form.html:9
-#: liqd_product/templates/a4modules/module_detail.html:40
+#: apps/budgeting/templates/a4_candy_budgeting/proposal_create_form.html:9
+#: apps/budgeting/templates/a4_candy_budgeting/proposal_moderate_form.html:9
+#: apps/budgeting/templates/a4_candy_budgeting/proposal_update_form.html:10
+#: apps/contrib/templates/a4_candy_contrib/item_detail.html:11
+#: apps/documents/templates/a4_candy_documents/paragraph_detail.html:10
+#: apps/ideas/templates/a4_candy_ideas/idea_create_form.html:9
+#: apps/ideas/templates/a4_candy_ideas/idea_moderate_form.html:10
+#: apps/ideas/templates/a4_candy_ideas/idea_update_form.html:10
+#: apps/mapideas/templates/a4_candy_mapideas/mapidea_create_form.html:9
+#: apps/mapideas/templates/a4_candy_mapideas/mapidea_moderate_form.html:9
+#: apps/mapideas/templates/a4_candy_mapideas/mapidea_update_form.html:10
+#: liqd_product/templates/a4modules/module_detail.html:41
 msgid "breadcrumbs"
 msgstr "breadcrumbs"
 
-#: apps/budgeting/templates/a4_candy_budgeting/proposal_create_form.html:13
-#: apps/budgeting/templates/a4_candy_budgeting/proposal_moderate_form.html:13
-#: apps/budgeting/templates/a4_candy_budgeting/proposal_update_form.html:14
-#: apps/contrib/templates/a4_candy_contrib/item_detail.html:15
-#: apps/ideas/templates/a4_candy_ideas/idea_create_form.html:13
-#: apps/ideas/templates/a4_candy_ideas/idea_moderate_form.html:14
-#: apps/ideas/templates/a4_candy_ideas/idea_update_form.html:14
-#: apps/mapideas/templates/a4_candy_mapideas/mapidea_create_form.html:13
-#: apps/mapideas/templates/a4_candy_mapideas/mapidea_moderate_form.html:13
-#: apps/mapideas/templates/a4_candy_mapideas/mapidea_update_form.html:14
+#: apps/budgeting/templates/a4_candy_budgeting/proposal_create_form.html:14
+#: apps/budgeting/templates/a4_candy_budgeting/proposal_moderate_form.html:14
+#: apps/budgeting/templates/a4_candy_budgeting/proposal_update_form.html:15
+#: apps/contrib/templates/a4_candy_contrib/item_detail.html:16
+#: apps/ideas/templates/a4_candy_ideas/idea_create_form.html:14
+#: apps/ideas/templates/a4_candy_ideas/idea_moderate_form.html:15
+#: apps/ideas/templates/a4_candy_ideas/idea_update_form.html:15
+#: apps/mapideas/templates/a4_candy_mapideas/mapidea_create_form.html:14
+#: apps/mapideas/templates/a4_candy_mapideas/mapidea_moderate_form.html:14
+#: apps/mapideas/templates/a4_candy_mapideas/mapidea_update_form.html:15
 msgid "go back"
 msgstr "zurück"
 
-#: apps/budgeting/templates/a4_candy_budgeting/proposal_create_form.html:18
+#: apps/budgeting/templates/a4_candy_budgeting/proposal_create_form.html:19
 msgid "Submit a new proposal for this project"
 msgstr "Einen neuen Vorschlag für dieses Projekt anlegen"
 
@@ -1257,19 +1254,19 @@ msgstr "Einen neuen Vorschlag für dieses Projekt anlegen"
 msgid "Submit proposal"
 msgstr "Vorschlag anlegen"
 
-#: apps/budgeting/templates/a4_candy_budgeting/proposal_list.html:35
-#: apps/mapideas/templates/a4_candy_mapideas/mapidea_list.html:35
+#: apps/budgeting/templates/a4_candy_budgeting/proposal_list.html:37
+#: apps/mapideas/templates/a4_candy_mapideas/mapidea_list.html:37
 msgid "Zoom in"
 msgstr "hineinzoomen"
 
-#: apps/budgeting/templates/a4_candy_budgeting/proposal_list.html:36
-#: apps/mapideas/templates/a4_candy_mapideas/mapidea_list.html:36
+#: apps/budgeting/templates/a4_candy_budgeting/proposal_list.html:38
+#: apps/mapideas/templates/a4_candy_mapideas/mapidea_list.html:38
 msgid "Zoom out"
 msgstr "auszoomen"
 
-#: apps/budgeting/templates/a4_candy_budgeting/proposal_list.html:53
-#: apps/ideas/templates/a4_candy_ideas/idea_list.html:31
-#: apps/mapideas/templates/a4_candy_mapideas/mapidea_list.html:53
+#: apps/budgeting/templates/a4_candy_budgeting/proposal_list.html:56
+#: apps/ideas/templates/a4_candy_ideas/idea_list.html:34
+#: apps/mapideas/templates/a4_candy_mapideas/mapidea_list.html:56
 #: apps/offlineevents/templates/a4_candy_offlineevents/offlineevent_list.html:27
 msgid "Nothing to show"
 msgstr "Keine Einträge"
@@ -1278,12 +1275,12 @@ msgstr "Keine Einträge"
 msgid "Moderate"
 msgstr "Moderieren"
 
-#: apps/budgeting/templates/a4_candy_budgeting/proposal_moderate_form.html:18
-#: apps/budgeting/templates/a4_candy_budgeting/proposal_update_form.html:19
+#: apps/budgeting/templates/a4_candy_budgeting/proposal_moderate_form.html:19
+#: apps/budgeting/templates/a4_candy_budgeting/proposal_update_form.html:20
 msgid "back to proposal"
 msgstr "Zurück zum Vorschlag"
 
-#: apps/budgeting/templates/a4_candy_budgeting/proposal_moderate_form.html:23
+#: apps/budgeting/templates/a4_candy_budgeting/proposal_moderate_form.html:24
 msgid "Moderate proposal"
 msgstr "Vorschlag moderieren"
 
@@ -1295,7 +1292,7 @@ msgstr "Vorschlag moderieren"
 msgid "Edit %(title)s"
 msgstr "%(title)s bearbeiten"
 
-#: apps/budgeting/templates/a4_candy_budgeting/proposal_update_form.html:24
+#: apps/budgeting/templates/a4_candy_budgeting/proposal_update_form.html:25
 msgid "Edit proposal"
 msgstr "Vorschlag bearbeiten"
 
@@ -1543,27 +1540,27 @@ msgstr " von "
 msgid "Next page"
 msgstr "Nächste Seite"
 
-#: apps/contrib/templates/a4_candy_contrib/item_detail.html:56
+#: apps/contrib/templates/a4_candy_contrib/item_detail.html:57
 #: apps/exports/mixins.py:12
 msgid "Reference No."
 msgstr "Refernznr."
 
-#: apps/contrib/templates/a4_candy_contrib/item_detail.html:82
-#: apps/contrib/templates/a4_candy_contrib/item_detail.html:91
+#: apps/contrib/templates/a4_candy_contrib/item_detail.html:83
+#: apps/contrib/templates/a4_candy_contrib/item_detail.html:92
 msgid "Actions"
 msgstr "Aktionen"
 
-#: apps/contrib/templates/a4_candy_contrib/item_detail.html:98
+#: apps/contrib/templates/a4_candy_contrib/item_detail.html:99
 #: apps/offlineevents/templates/a4_candy_offlineevents/includes/offlineevent_list_item.html:25
 msgid "Delete"
 msgstr "Löschen"
 
-#: apps/contrib/templates/a4_candy_contrib/item_detail.html:102
+#: apps/contrib/templates/a4_candy_contrib/item_detail.html:103
 #: apps/ideas/templates/a4_candy_ideas/idea_moderate_form.html:4
 msgid "Give feedback"
 msgstr "Zurück melden"
 
-#: apps/contrib/templates/a4_candy_contrib/item_detail.html:122
+#: apps/contrib/templates/a4_candy_contrib/item_detail.html:125
 #: apps/exports/mixins.py:26
 msgid "Official Statement"
 msgstr "Offizielle Rückmeldung"
@@ -1685,12 +1682,12 @@ msgstr "Text kommentieren"
 msgid "Post comments on the paragraphs of the text"
 msgstr "Abschnitte/Absätze des Textes kommentieren"
 
-#: apps/documents/templates/a4_candy_documents/chapter_detail.html:10
-#: apps/documents/templates/a4_candy_documents/chapter_detail.html:17
+#: apps/documents/templates/a4_candy_documents/chapter_detail.html:11
+#: apps/documents/templates/a4_candy_documents/chapter_detail.html:18
 msgid "Table of Contents"
 msgstr "Inhaltsverzeichnis"
 
-#: apps/documents/templates/a4_candy_documents/chapter_detail.html:52
+#: apps/documents/templates/a4_candy_documents/chapter_detail.html:53
 #, python-format
 msgid "%(count)s Comment"
 msgid_plural "%(count)s Comments"
@@ -1701,17 +1698,17 @@ msgstr[1] "%(count)s Kommentare"
 msgid "Edit document"
 msgstr "Dokument bearbeiten"
 
-#: apps/documents/templates/a4_candy_documents/includes/nextprev.html:9
-#: apps/documents/templates/a4_candy_documents/includes/nextprev.html:14
+#: apps/documents/templates/a4_candy_documents/includes/nextprev.html:10
+#: apps/documents/templates/a4_candy_documents/includes/nextprev.html:15
 msgid "Previous Chapter"
 msgstr "Vorheriges Kapitel"
 
-#: apps/documents/templates/a4_candy_documents/includes/nextprev.html:20
-#: apps/documents/templates/a4_candy_documents/includes/nextprev.html:25
+#: apps/documents/templates/a4_candy_documents/includes/nextprev.html:21
+#: apps/documents/templates/a4_candy_documents/includes/nextprev.html:26
 msgid "Next Chapter"
 msgstr "Nächstes Kapitel"
 
-#: apps/documents/templates/a4_candy_documents/paragraph_detail.html:14
+#: apps/documents/templates/a4_candy_documents/paragraph_detail.html:15
 msgid "back to chapter"
 msgstr "Zurück zum Kapitel"
 
@@ -1724,7 +1721,7 @@ msgstr "Für dieses Dokument wurden noch keine Kapitel angelegt"
 #: apps/users/templates/a4_candy_users/indicator.html:47
 #: liqd_product/templates/account/login.html:4
 #: liqd_product/templates/account/login.html:7
-#: liqd_product/templates/account/login.html:26
+#: liqd_product/templates/account/login.html:27
 msgid "Login"
 msgstr "Anmelden"
 
@@ -1863,13 +1860,13 @@ msgstr ""
 msgid "Confirm Idea Deletion"
 msgstr "Bestätigung der Löschung der Idee"
 
-#: apps/ideas/templates/a4_candy_ideas/idea_confirm_delete.html:9
-#: apps/mapideas/templates/a4_candy_mapideas/mapidea_confirm_delete.html:9
+#: apps/ideas/templates/a4_candy_ideas/idea_confirm_delete.html:10
+#: apps/mapideas/templates/a4_candy_mapideas/mapidea_confirm_delete.html:10
 msgid "Are you sure you want to delete the idea?"
 msgstr "Sind Sie sicher, dass Sie diese Idee löschen möchten?"
 
-#: apps/ideas/templates/a4_candy_ideas/idea_create_form.html:18
-#: apps/mapideas/templates/a4_candy_mapideas/mapidea_create_form.html:18
+#: apps/ideas/templates/a4_candy_ideas/idea_create_form.html:19
+#: apps/mapideas/templates/a4_candy_mapideas/mapidea_create_form.html:19
 msgid "Submit a new idea for this project"
 msgstr "Eine neue Idee für dieses Projekt anlegen"
 
@@ -1877,19 +1874,19 @@ msgstr "Eine neue Idee für dieses Projekt anlegen"
 msgid "Submit idea"
 msgstr "Idee anlegen"
 
-#: apps/ideas/templates/a4_candy_ideas/idea_moderate_form.html:19
-#: apps/ideas/templates/a4_candy_ideas/idea_update_form.html:19
-#: apps/mapideas/templates/a4_candy_mapideas/mapidea_moderate_form.html:18
-#: apps/mapideas/templates/a4_candy_mapideas/mapidea_update_form.html:19
+#: apps/ideas/templates/a4_candy_ideas/idea_moderate_form.html:20
+#: apps/ideas/templates/a4_candy_ideas/idea_update_form.html:20
+#: apps/mapideas/templates/a4_candy_mapideas/mapidea_moderate_form.html:19
+#: apps/mapideas/templates/a4_candy_mapideas/mapidea_update_form.html:20
 msgid "back to idea"
 msgstr "Zurück zur Idee"
 
-#: apps/ideas/templates/a4_candy_ideas/idea_moderate_form.html:24
+#: apps/ideas/templates/a4_candy_ideas/idea_moderate_form.html:25
 msgid "Feedback on this idea"
 msgstr "Rückmeldung zu dieser Idee"
 
-#: apps/ideas/templates/a4_candy_ideas/idea_update_form.html:24
-#: apps/mapideas/templates/a4_candy_mapideas/mapidea_update_form.html:24
+#: apps/ideas/templates/a4_candy_ideas/idea_update_form.html:25
+#: apps/mapideas/templates/a4_candy_mapideas/mapidea_update_form.html:25
 msgid "Edit idea"
 msgstr "Idee bearbeiten"
 
@@ -1953,7 +1950,7 @@ msgstr "Idee anlegen"
 msgid "Moderate %(name)s"
 msgstr "%(name)s moderieren"
 
-#: apps/mapideas/templates/a4_candy_mapideas/mapidea_moderate_form.html:23
+#: apps/mapideas/templates/a4_candy_mapideas/mapidea_moderate_form.html:24
 msgid "Moderate idea"
 msgstr "Idee moderieren"
 
@@ -2206,7 +2203,7 @@ msgstr ""
 
 #: apps/organisations/models.py:76
 #: apps/organisations/templates/organisation_imprint.html:4
-#: apps/organisations/templates/organisation_imprint.html:9
+#: apps/organisations/templates/organisation_imprint.html:10
 #: apps/partners/models.py:74 liqd_product/templates/footer.html:34
 #: liqd_product/templates/header.html:39
 msgid "Imprint"
@@ -2232,7 +2229,7 @@ msgstr ""
 "Der Banner, in dem um Spenden gebeten wird, wird auf den Seiten "
 "unterstützender Organisationen nicht angezeigt."
 
-#: apps/organisations/templates/organisation_form.html:9
+#: apps/organisations/templates/organisation_form.html:10
 msgid "Edit your organisation information"
 msgstr "Organisationsinformationen bearbeiten"
 
@@ -2245,7 +2242,7 @@ msgstr "Aktivitäten"
 msgid "No activity yet. "
 msgstr "Noch keine Aktivität."
 
-#: apps/organisations/views.py:66
+#: apps/organisations/views.py:67
 msgid "Organisation successfully updated."
 msgstr "Organisation erfolgreich aktualisiert"
 
@@ -2379,9 +2376,9 @@ msgstr "Zeitleiste"
 
 #: apps/projects/templates/a4_candy_projects/includes/timeline.html:18
 #: apps/projects/templates/a4_candy_projects/includes/timeline.html:76
-#: apps/projects/templates/a4_candy_projects/project_detail.html:180
+#: apps/projects/templates/a4_candy_projects/project_detail.html:189
 #: apps/users/models.py:47
-#: liqd_product/templates/a4modules/module_detail.html:82
+#: liqd_product/templates/a4modules/module_detail.html:87
 msgid "active"
 msgstr "aktiv"
 
@@ -2392,29 +2389,29 @@ msgstr "aktuelle Seite"
 
 #: apps/projects/templates/a4_candy_projects/includes/timeline.html:49
 #: apps/projects/templates/a4_candy_projects/includes/timeline.html:96
-#: apps/projects/templates/a4_candy_projects/project_detail.html:158
-#: liqd_product/templates/a4modules/module_detail.html:60
+#: apps/projects/templates/a4_candy_projects/project_detail.html:165
+#: liqd_product/templates/a4modules/module_detail.html:63
 msgid "Participation is not possible at the moment."
 msgstr "Die Beteiligung ist aktuell nicht möglich."
 
 #: apps/projects/templates/a4_candy_projects/includes/timeline.html:52
 #: apps/projects/templates/a4_candy_projects/includes/timeline.html:98
-#: apps/projects/templates/a4_candy_projects/project_detail.html:161
-#: liqd_product/templates/a4modules/module_detail.html:63
+#: apps/projects/templates/a4_candy_projects/project_detail.html:168
+#: liqd_product/templates/a4modules/module_detail.html:66
 #, python-format
 msgid "It starts on %(date)s."
 msgstr "Sie startet am %(date)s."
 
 #: apps/projects/templates/a4_candy_projects/includes/timeline.html:55
-#: apps/projects/templates/a4_candy_projects/project_detail.html:164
-#: liqd_product/templates/a4modules/module_detail.html:66
+#: apps/projects/templates/a4_candy_projects/project_detail.html:171
+#: liqd_product/templates/a4modules/module_detail.html:69
 #, python-format
 msgid "It continues on %(date)s."
 msgstr "Es geht weiter am %(date)s."
 
 #: apps/projects/templates/a4_candy_projects/includes/timeline.html:58
-#: apps/projects/templates/a4_candy_projects/project_detail.html:167
-#: liqd_product/templates/a4modules/module_detail.html:69
+#: apps/projects/templates/a4_candy_projects/project_detail.html:174
+#: liqd_product/templates/a4modules/module_detail.html:72
 #, python-format
 msgid "It ended on %(date)s."
 msgstr "Sie hat am %(date)s geendet."
@@ -2433,13 +2430,13 @@ msgstr "Hochladen"
 msgid "Invitation to %(project)s"
 msgstr "Einladung zu %(project)s"
 
-#: apps/projects/templates/a4_candy_projects/moderatorinvite_detail.html:8
-#: apps/projects/templates/a4_candy_projects/moderatorinvite_form.html:8
+#: apps/projects/templates/a4_candy_projects/moderatorinvite_detail.html:9
+#: apps/projects/templates/a4_candy_projects/moderatorinvite_form.html:9
 #, python-format
 msgid "Moderation invitation for %(project)s"
 msgstr "Moderationseinladungen für %(project)s"
 
-#: apps/projects/templates/a4_candy_projects/moderatorinvite_detail.html:11
+#: apps/projects/templates/a4_candy_projects/moderatorinvite_detail.html:12
 msgid ""
 "Please login to procceed. If you do not have an account, register and "
 "revisit the invitation link."
@@ -2447,13 +2444,13 @@ msgstr ""
 "Bitte melden Sie sich an. Wenn Sie noch kein Konto haben, registrieren Sie "
 "sich bitte und besuchen sie den Einladungslink noch einmal."
 
-#: apps/projects/templates/a4_candy_projects/moderatorinvite_detail.html:13
-#: apps/projects/templates/a4_candy_projects/participantinvite_detail.html:13
+#: apps/projects/templates/a4_candy_projects/moderatorinvite_detail.html:14
+#: apps/projects/templates/a4_candy_projects/participantinvite_detail.html:14
 msgid "Proceed to login"
 msgstr "Weiter zur Anmeldung"
 
-#: apps/projects/templates/a4_candy_projects/moderatorinvite_detail.html:14
-#: apps/projects/templates/a4_candy_projects/participantinvite_detail.html:14
+#: apps/projects/templates/a4_candy_projects/moderatorinvite_detail.html:15
+#: apps/projects/templates/a4_candy_projects/participantinvite_detail.html:15
 #: apps/users/templates/a4_candy_users/indicator.html:49
 #: liqd_product/templates/account/signup.html:4
 #: liqd_product/templates/account/signup.html:7
@@ -2462,7 +2459,7 @@ msgstr "Weiter zur Anmeldung"
 msgid "Register"
 msgstr "Registrieren"
 
-#: apps/projects/templates/a4_candy_projects/moderatorinvite_form.html:11
+#: apps/projects/templates/a4_candy_projects/moderatorinvite_form.html:12
 msgid ""
 "You were invited by the initiator of the project. If you accept you will be "
 "able to moderate the project."
@@ -2470,13 +2467,13 @@ msgstr ""
 "Sie wurden von den Initiator*innen des Projekts eingeladen. Wenn Sie "
 "akzeptieren können sie das Projekt moderieren."
 
-#: apps/projects/templates/a4_candy_projects/moderatorinvite_form.html:15
-#: apps/projects/templates/a4_candy_projects/participantinvite_form.html:18
+#: apps/projects/templates/a4_candy_projects/moderatorinvite_form.html:16
+#: apps/projects/templates/a4_candy_projects/participantinvite_form.html:19
 msgid "Accept"
 msgstr "Akzeptieren"
 
-#: apps/projects/templates/a4_candy_projects/moderatorinvite_form.html:16
-#: apps/projects/templates/a4_candy_projects/participantinvite_form.html:19
+#: apps/projects/templates/a4_candy_projects/moderatorinvite_form.html:17
+#: apps/projects/templates/a4_candy_projects/participantinvite_form.html:20
 msgid "Decline"
 msgstr "Ablehnen"
 
@@ -2486,57 +2483,51 @@ msgstr "Ablehnen"
 msgid "Project: %(project)s"
 msgstr "Projekt: %(project)s"
 
-#: apps/projects/templates/a4_candy_projects/participantinvite_detail.html:8
+#: apps/projects/templates/a4_candy_projects/participantinvite_detail.html:9
 #, python-format
 msgid "Do you want to take part in \"%(project)s\"?"
 msgstr "Teilnahme am Projekt %(project)s"
 
-#: apps/projects/templates/a4_candy_projects/participantinvite_detail.html:11
+#: apps/projects/templates/a4_candy_projects/participantinvite_detail.html:12
 msgid ""
 "For this you need an account. Please login with your account or register."
 msgstr ""
 "Hierzu benötigen Sie ein Konto. Bitte melden Sie sich mit Ihrem meinBerlin-"
 "Konto an oder registrieren Sie sich neu."
 
-#: apps/projects/templates/a4_candy_projects/participantinvite_form.html:8
+#: apps/projects/templates/a4_candy_projects/participantinvite_form.html:9
 #, python-format
 msgid "Do you want to join %(project)s?"
 msgstr "Wollen Sie %(project)s beitreten?"
 
-#: apps/projects/templates/a4_candy_projects/participantinvite_form.html:11
+#: apps/projects/templates/a4_candy_projects/participantinvite_form.html:12
 #, python-format
 msgid ""
 "\n"
-"                You were invited by the initiator of the project. If you "
+"                    You were invited by the initiator of the project. If you "
 "accept you will be able to participate in the project with your username "
 "\"%(user)s\".\n"
-"                If you want to join with a different profile please login "
-"with your other profile and follow the invitation link again. If you decline "
-"the invitation the link is not valid anymore.\n"
-"                "
+"                    If you want to join with a different profile please "
+"login with your other profile and follow the invitation link again. If you "
+"decline the invitation the link is not valid anymore.\n"
+"                    "
 msgstr ""
-"\n"
-"Wenn Sie akzeptieren, treten Sie dem Projekt mit Ihrem Nutzernamen \"%(user)s"
-"\" bei.\n"
-"Wenn Sie dem Projekt mit einem anderen Profil beitreten möchten, melden Sie "
-"sich ab und folgen Sie dem Einladungslink erneut. Wenn Sie die Einladung "
-"ablehnen, verliert der Link seine Gültigkeit."
 
 #: apps/projects/templates/a4_candy_projects/project_detail.html:13
 #: liqd_product/templates/a4modules/module_detail.html:14
 msgid "This project is in not published yet."
 msgstr "Dieses Projekt ist noch nicht veröffentlicht."
 
-#: apps/projects/templates/a4_candy_projects/project_detail.html:30
+#: apps/projects/templates/a4_candy_projects/project_detail.html:31
 #, python-format
 msgid "to project collection %(name)s"
 msgstr "zur Projektsammlung %(name)s"
 
-#: apps/projects/templates/a4_candy_projects/project_detail.html:74
+#: apps/projects/templates/a4_candy_projects/project_detail.html:76
 msgid "Participation"
 msgstr "Beteiligung"
 
-#: apps/projects/templates/a4_candy_projects/project_detail.html:217
+#: apps/projects/templates/a4_candy_projects/project_detail.html:228
 msgid "No results yet."
 msgstr "Noch gibt es keine Ergebnisse."
 
@@ -2619,27 +2610,11 @@ msgstr "Füge Frage hinzu."
 msgid "post"
 msgstr "abschicken"
 
-#: apps/questions/templates/a4_candy_questions/question_module_detail.html:33
-msgid "Questions"
-msgstr "Fragen"
-
-#: apps/questions/templates/a4_candy_questions/question_module_detail.html:43
-msgid "Statistics"
-msgstr "Statistiken"
-
-#: apps/questions/templates/a4_candy_questions/question_module_detail.html:82
-msgid "display on screen"
-msgstr "auf Bildschirm anzeigen"
-
-#: apps/questions/templates/a4_candy_questions/question_module_detail.html:94
-msgid "Add Question"
-msgstr "Frage hinzufügen"
-
-#: apps/questions/templates/a4_candy_questions/question_module_detail.html:124
+#: apps/questions/templates/a4_candy_questions/question_module_detail.html:21
 msgid "During this event you can hand in questions with your smartphone"
 msgstr "Während dieser Veranstaltung können Sie Fragen per Handy stellen."
 
-#: apps/questions/templates/a4_candy_questions/question_module_detail.html:129
+#: apps/questions/templates/a4_candy_questions/question_module_detail.html:26
 msgid "Go to event"
 msgstr "Zur Veranstaltung"
 
@@ -2990,12 +2965,12 @@ msgstr "Diese Seite konnte nicht gefunden werden."
 msgid "adhocracy+"
 msgstr "adhocracy+"
 
-#: liqd_product/templates/500.html:24
+#: liqd_product/templates/500.html:25
 msgid "Internal server error."
 msgstr "Interner Serverfehler."
 
-#: liqd_product/templates/500.html:25
-#: liqd_product/templates/base_errors.html:11
+#: liqd_product/templates/500.html:26
+#: liqd_product/templates/base_errors.html:12
 msgid "Back to adhocracy+"
 msgstr "Zurück zu adhocracy+"
 
@@ -3066,7 +3041,7 @@ msgstr "von"
 msgid "Next"
 msgstr "Nächste"
 
-#: liqd_product/templates/a4modules/module_detail.html:116
+#: liqd_product/templates/a4modules/module_detail.html:124
 msgid "More questions from this online participation"
 msgstr "Mehr Fragen aus dieser Online-Beteiligung"
 
@@ -3141,7 +3116,7 @@ msgstr ""
 "Wenn Sie noch kein Nutzerkonto haben, <a href=\"%(signup_url)s"
 "\">registrieren</a> Sie sich bitte zuerst."
 
-#: liqd_product/templates/account/login.html:27
+#: liqd_product/templates/account/login.html:30
 msgid "Forgot Password?"
 msgstr "Passwort vergessen?"
 
@@ -3380,6 +3355,42 @@ msgstr "Mit Konto eines sozialen Netzwerks einloggen"
 #: liqd_product/templates/socialaccount/snippets/provider_list.html:23
 msgid "Login with "
 msgstr "Einloggen mit "
+
+#~ msgid ""
+#~ "Exclude this project from all listings by default. You can still access "
+#~ "this project by using filters."
+#~ msgstr ""
+#~ "Dieses Projekt standardmäßig von allen Listen ausschließen. Sie können "
+#~ "das Projekt weiterhin über die Filter erreichen."
+
+#~ msgid ""
+#~ "\n"
+#~ "                You were invited by the initiator of the project. If you "
+#~ "accept you will be able to participate in the project with your username "
+#~ "\"%(user)s\".\n"
+#~ "                If you want to join with a different profile please login "
+#~ "with your other profile and follow the invitation link again. If you "
+#~ "decline the invitation the link is not valid anymore.\n"
+#~ "                "
+#~ msgstr ""
+#~ "\n"
+#~ "Wenn Sie akzeptieren, treten Sie dem Projekt mit Ihrem Nutzernamen "
+#~ "\"%(user)s\" bei.\n"
+#~ "Wenn Sie dem Projekt mit einem anderen Profil beitreten möchten, melden "
+#~ "Sie sich ab und folgen Sie dem Einladungslink erneut. Wenn Sie die "
+#~ "Einladung ablehnen, verliert der Link seine Gültigkeit."
+
+#~ msgid "Questions"
+#~ msgstr "Fragen"
+
+#~ msgid "Statistics"
+#~ msgstr "Statistiken"
+
+#~ msgid "display on screen"
+#~ msgstr "auf Bildschirm anzeigen"
+
+#~ msgid "Add Question"
+#~ msgstr "Frage hinzufügen"
 
 #~ msgid "Twitter name"
 #~ msgstr "Twitter Name"

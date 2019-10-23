@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-10-21 15:05+0200\n"
+"POT-Creation-Date: 2019-10-23 17:19+0200\n"
 "PO-Revision-Date: 2017-05-30 12:06+0100\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -502,10 +502,26 @@ msgstr "Information schließen"
 msgid "Open information"
 msgstr "Information öffnen"
 
-#: apps/questions/assets/QuestionBox.jsx:16
-#: apps/questions/assets/QuestionBox.jsx:45
+#: apps/questions/assets/QuestionBox.jsx:18
+#: apps/questions/assets/QuestionBox.jsx:47
 msgid "select category"
 msgstr "Merkmal auswählen"
+
+#: apps/questions/assets/QuestionBox.jsx:177
+msgid "Information"
+msgstr ""
+
+#: apps/questions/assets/QuestionBox.jsx:188
+msgid "Questions"
+msgstr ""
+
+#: apps/questions/assets/QuestionBox.jsx:199
+msgid "Statistics"
+msgstr ""
+
+#: apps/questions/assets/QuestionBox.jsx:260
+msgid "Add Question"
+msgstr ""
 
 #: apps/questions/assets/QuestionModerator.jsx:97
 msgid "mark as hidden"
@@ -552,7 +568,7 @@ msgstr "positiv bewerten"
 msgid "undo like"
 msgstr "positive Bewertung zurück nehmen"
 
-#: apps/questions/assets/StatisticsBox.jsx:100
+#: apps/questions/assets/StatisticsBox.jsx:44
 msgid "Questions Answered"
 msgstr "Beantwortete Fragen"
 
